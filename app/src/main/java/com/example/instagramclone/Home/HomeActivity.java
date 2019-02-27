@@ -1,4 +1,4 @@
-package com.example.instagramclone;
+package com.example.instagramclone.Home;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,15 +7,16 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.instagramclone.R;
 import com.example.instagramclone.utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
-public class MainActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity {
 
-    private static final String TAG = "MainActivity";
+    private static final String TAG = "HomeActivity";
 
     private static final int ACTIVITY_NUM = 0;
-    private Context nContext = MainActivity.this;
+    private Context nContext = HomeActivity.this;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

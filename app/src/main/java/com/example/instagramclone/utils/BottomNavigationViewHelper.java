@@ -7,12 +7,12 @@ import android.support.design.widget.BottomNavigationView;
 import android.util.Log;
 import android.view.MenuItem;
 
-import com.example.instagramclone.LikesActivity;
-import com.example.instagramclone.MainActivity;
-import com.example.instagramclone.ProfileActivity;
+import com.example.instagramclone.Home.HomeActivity;
+import com.example.instagramclone.Likes.LikesActivity;
+import com.example.instagramclone.Profile.ProfileActivity;
 import com.example.instagramclone.R;
-import com.example.instagramclone.SearchActivity;
-import com.example.instagramclone.ShareActivity;
+import com.example.instagramclone.Search.SearchActivity;
+import com.example.instagramclone.Share.ShareActivity;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
 public class BottomNavigationViewHelper {
@@ -34,7 +34,7 @@ public class BottomNavigationViewHelper {
                 switch (menuItem.getItemId()) {
 
                     case R.id.ic_house:
-                        Intent intent1 = new Intent(context, MainActivity.class);
+                        Intent intent1 = new Intent(context, HomeActivity.class);
                         context.startActivity(intent1);
                         break;
 

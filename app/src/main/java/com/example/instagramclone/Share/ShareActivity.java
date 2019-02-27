@@ -1,4 +1,4 @@
-package com.example.instagramclone;
+package com.example.instagramclone.Share;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -8,13 +8,14 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.example.instagramclone.R;
 import com.example.instagramclone.utils.BottomNavigationViewHelper;
 import com.ittianyu.bottomnavigationviewex.BottomNavigationViewEx;
 
-public class SearchActivity extends AppCompatActivity {
-    private static final String TAG = "SearchActivity";
-    private static final int ACTIVITY_NUM = 1;
-    private Context nContext = SearchActivity.this;
+public class ShareActivity extends AppCompatActivity {
+    private static final String TAG = "ShareActivity";
+    private static final int ACTIVITY_NUM = 2;
+    private Context nContext = ShareActivity.this;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,6 +38,5 @@ public class SearchActivity extends AppCompatActivity {
         Menu menu = bottomNavigationViewEx.getMenu();
         MenuItem menuItem = menu.getItem(ACTIVITY_NUM);
         menuItem.setChecked(true);
-
     }
 }
